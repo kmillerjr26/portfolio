@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 10fr 2fr;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    height: 100vh;
+    width: 18%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 7%;
+    padding-left: 2%;
+}
+
+.logo {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+/*
+.toggle-button {
+   /* position: absolute; */
+    /*display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background-color: red;
+} 
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+} */
+
+nav {
+    width: 72%;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: 60%;
+}
+
+nav li {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    padding: 15px 0;
+    list-style: none;
+    float: right;
+}
+
+nav li:hover {
+    color: #00e693;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav li:hover span {
+    color: #00e693;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav li:active {
+    color: #00e693;
+}
+
+.linkedin {
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/linkedin.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.linkedin:hover {
+    background-image: url("../images/linkedin-hover.png");
+}
+
+.pageContent {
+    width: 80%;
+    margin-left: 25%;
+}
+
+.content {
+    width: 80%;
+    margin-top: 7%;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+}
+
+#hello {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin-bottom: 2%;
+}
+
+#intro {
+    font-family: "Helvetica", sans-serif;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+#intro2 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 40px;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+button {
+    margin-top: 3%;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold; 
+    color: black;
+}
+
+button:hover {
+    background-color: #00e693; 
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    width: 80%;
+    height: 20px;
+    margin-left: 15%;
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    margin-top: 30px;
+    position: static;
+    bottom: 10px;
+    text-align: center;
+}
+
+footer ul {
+   /* display: inline-block;
+    vertical-align: top;
+    padding: auto;*/
+}
+
+p {
+    font-family: "Helvetica", sans-serif; 
+}
+
+h1 {
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+    color: #2680ff;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+
+h2 {
+
+}
+
+h3 {
+    font-family: "Helvetica", sans-serif;
+    color: #e60080;
+}
+
+h4 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold; 
+    color: #e60080;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-left {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/left-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 50px;
+}
+
+.arrow-left:hover {
+    background-image: url("../images/left-arrow-hover.png");
+    cursor: pointer;
+}
+
+.arrow-right {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/right-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 50px;
+}
+
+.arrow-right:hover {
+    background-image: url("../images/right-arrow-hover.png");
+    cursor: pointer;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: 8fr 4fr;
+    width: 300px;
+    height: 300px;
+}
+.card-image {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image:none;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+#card-text {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold; 
+    color: #e60080;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    padding-top: 15px;
+}

@@ -1,0 +1,33 @@
+.workGrid {
+    display: grid;
+   /* grid-template-areas: myArea myArea myArea myArea myArea;*/
+    grid-template-columns: 6fr 6fr;
+}
+
+.item {
+    /*grid-area: myArea;*/
+    margin-bottom: 2%;
+    height: 400px;
+}
+.casestudy-image {
+    width: 80%;
+    height: 45%;
+    background-color: black;
+    margin-bottom: 3%;
+}
+
+.casestudy-text {
+    width: 80%;
+    height: 30%;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        grid-template-columns: 100%;
+        grid-template-rows: 6fr 6fr;
+    }
+}

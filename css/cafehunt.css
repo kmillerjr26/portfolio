@@ -1,0 +1,25 @@
+.container{
+    width: 83%;
+    margin-left: 18%;
+    font-family: Helvetica, sans-serif;
+}
+
+.introimage {
+    background-color: black;
+}
+
+.case-study-header {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5em;
+    color: #e60080;
+}
+
+.case-study-header2 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1em;
+    color: #e60080;
+}
+
+.center {
+    text-align: center;
+}
