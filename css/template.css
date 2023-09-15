@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 40px;
+    position: fixed;
+    padding: 0 0 0 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.list {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.link:hover {
+    color: #00e693;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.currentlink {
+    color: #00e693;
+    font-weight: bold;
+}
+
+.linkedin {
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/linkedin.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.linkedin:hover {
+    background-image: url("../images/linkedin-hover.png");
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.footer {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+button {
+    margin-top: 3%;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold; 
+    color: black;
+}
+
+button:hover {
+    background-color: #00e693; 
+    color: white;
+    cursor: pointer;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Helvetica", sans-serif; 
+}
+
+h1 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2680ff;
+    margin-top: 70px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h2 {
+
+}
+
+h3 {
+    font-family: "Helvetica", sans-serif;
+    color: #e60080;
+}
+
+h4 {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold; 
+    color: #e60080;
+}
+
+@media (min-width: 768px){
+    .navigation {
+        flex-direction: column;
+        height: 100vh;
+        padding: 120px 20px 0;
+    }
+
+    .container {
+        width: 81%;
+        margin-left: 16%;
+        padding-left: 3%;
+    }
+
+    .footer {
+        margin-left: 16%;
+        width: 84%;
+    }
+
+    .logo {
+        float: right;
+        padding: 0 0 0 1%;
+    }
+
+    .list {
+        align-items: normal;
+    }
+
+    .link {
+        text-align: right;
+    }
+
+    .linkedin {
+        float: right;
+    }
+
+    h1 {
+        margin-top: 70px;
+        text-align: unset;
+    }
+}

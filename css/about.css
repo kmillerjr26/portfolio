@@ -1,0 +1,23 @@
+.myskills {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: blue;
+}
+
+.skill {
+    background-color: red;
+}
+
+.symbol {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.skills-header {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e60080;
+}

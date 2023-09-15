@@ -1,22 +1,25 @@
-.flexContainer {
-    display: flex;
-    flex-direction: column;
-}
-
 .child {
-    width: 100%;
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 4fr 4fr 4fr;
     margin-bottom: 5%;
+    background-color: red;
 }
 
 .symbol {
     background-color: black;
-    height: 100%;
-    width: 80%;
+    height: 100px;
+    width: 100px;
 }
 
-@media only screen and (max-width: 600px) {
+.skills-header {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e60080;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
     .child {
         grid-template-columns: 100%;
         grid-template-rows: 6fr 6fr;

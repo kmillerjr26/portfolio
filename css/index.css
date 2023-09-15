@@ -15,7 +15,6 @@ a {
 
 .navigation {
     height: 100vh;
-    width: 18%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -23,65 +22,53 @@ a {
     padding-top: 7%;
     padding-left: 2%;
 }
+@media (max-width: 300px){
+    .navigation {
+        height: 30px;
+        width: 100vh;
+        flex-direction: row;
+    }
+}
 
 .logo {
     width: 100%;
     font-family: Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
     text-decoration: none;
     margin-bottom: 5%;
 }
 
-/*
-.toggle-button {
-   /* position: absolute; */
-    /*display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background-color: red;
-} 
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-} */
-
-nav {
-    width: 72%;
-}
-
-nav ul {
-    width: 50%;
-    margin-left: 60%;
-}
-
-nav li {
+.navigation ul {
     font-family: "Roboto Mono", monospace;
     color: white;
-    padding: 15px 0;
     list-style: none;
     float: right;
 }
 
-nav li:hover {
+.navigation a {
+    color: white;
+    display: inline-block;
+}
+
+.list{
+}
+
+.list:hover {
     color: #00e693;
     text-decoration: underline;
     cursor: pointer;
 }
 
-nav li:hover span {
+.navigation li:hover span {
     color: #00e693;
     text-decoration: underline;
     cursor: pointer;
 }
 
-nav li:active {
+.navigation li:active {
     color: #00e693;
 }
 
@@ -97,7 +84,7 @@ nav li:active {
     background-image: url("../images/linkedin-hover.png");
 }
 
-.pageContent {
+.container {
     width: 80%;
     margin-left: 25%;
 }
