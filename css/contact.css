@@ -1,0 +1,12 @@
+.one {
+    font-size: 24px;
+}
+
+.one-linkedin {
+    font-family: "Roboto Mono", monospace;
+    color: #00e693;
+}
+
+.one-linkedin:hover {
+    text-decoration: underline;
+}
