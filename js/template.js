@@ -1,6 +1,5 @@
 var width = $(document).width();
 var hamburgerClicked = false;
-var hamburgerAlreadyOpen = false;
 
 $(".hamburger").click(function(){
     /*const element = document.querySelector('.list2')
@@ -10,7 +9,6 @@ $(".hamburger").click(function(){
             $(".list2").css("opacity", "1");
             $(".list2").css("z-index", "1");
             hamburgerClicked = true;
-            hamburgerAlreadyOpen = true;
         }
         else{
             $(".list2").css("opacity", "0");
