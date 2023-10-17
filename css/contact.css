@@ -9,4 +9,5 @@
 
 .one-linkedin:hover {
     text-decoration: underline;
+    cursor: pointer;
 }

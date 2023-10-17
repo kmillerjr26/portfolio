@@ -17,3 +17,7 @@
 .center {
     text-align: center;
 }
+.wrapper {
+    margin: 0;
+    padding: 0;
+}

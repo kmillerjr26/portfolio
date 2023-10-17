@@ -45,21 +45,25 @@ a {
     display: flex;
     flex-direction: column;
     background-color: black;
+    width: 100vh;
     height: 100vh;
-    padding-top: 70px;
-    opacity: 1;
+    margin-top: 40px;
+    padding-top: 50px;
+    opacity: 0;
+    z-index: -1;
+    position: fixed;
 }
 .list2 a {
     margin-bottom: 20px;
 }
 
 .hamburger {
-    align-self: right;
+
 }
 
 .hamburger-line {
     width: 30px;
-    height: 5px;
+    height: 4px;
     background-color: white;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -190,7 +194,8 @@ h4 {
     }
 
     .list {
-        align-items: normal;
+        text-align: unset;
+        align-items: unset;
         opacity: 1;
     }
 
