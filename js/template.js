@@ -14,6 +14,7 @@ $(".hamburger").click(function(){
             $(".list2").css("opacity", "0");
             $(".list2").css("z-index", "-1");
             hamburgerClicked = false;
+            $(".hamburger-line").css("background-color", "#ffffff");
         }
     }
 });
@@ -26,9 +27,15 @@ $(".hamburger").hover(function(){
 
 $(".hamburger").mouseleave(function(){
     if(width < 768){
-        $(".hamburger-line").css("background-color", "#FFFFFF");
+        $(".hamburger-line").css("background-color", "#ffffff");
     }
 });
+
+$(".list").click(function(){
+    if(width < 768){
+        hamburgerClicked = false;
+    }
+})
 
 /* function resize(){
     if(width > 768){
