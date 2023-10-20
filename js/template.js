@@ -18,12 +18,12 @@ $(".hamburger").click(function(){
     }
 });
 
-/*function resize(){
-    if(width > 768 && hamburgerClicked == true){
-       /* $(".list2").css("opacity", "0");
+/* function resize(){
+    if(width > 768){
+        $(".list2").css("opacity", "0");
         $(".list2").css("z-index", "-1"); 
         hamburgerClicked = false;
-        hamburgerAlreadyOpen = false;
+        return hamburgerClicked;
     }
 }
 
