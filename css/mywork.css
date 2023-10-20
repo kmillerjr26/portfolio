@@ -1,11 +1,53 @@
+.project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project-image {
+    width: 60%;
+    height: 250px;
+    background-color: black;
+    margin-bottom: 3%;
+}
+
+.casestudy-text {
+    width: 80%;
+    height: 30%;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 767px){
+    .project {
+        align-items: center;
+    }
+    .project-image{
+        width: 100%;
+    }
+    .project-title{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/*
 .workGrid {
     display: grid;
-   /* grid-template-areas: myArea myArea myArea myArea myArea;*/
+    /*grid-template-areas: myArea myArea myArea myArea myArea;
     grid-template-columns: 6fr 6fr;
 }
 
 .item {
-    /*grid-area: myArea;*/
+    /*grid-area: myArea;
     margin-bottom: 2%;
     height: 400px;
 }
@@ -30,4 +72,4 @@
         grid-template-columns: 100%;
         grid-template-rows: 6fr 6fr;
     }
-}
+} */

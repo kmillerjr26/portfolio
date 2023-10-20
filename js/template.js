@@ -18,6 +18,18 @@ $(".hamburger").click(function(){
     }
 });
 
+$(".hamburger").hover(function(){
+    if(width < 768){
+        $(".hamburger-line").css("background-color", "#00e693");
+    }
+});
+
+$(".hamburger").mouseleave(function(){
+    if(width < 768){
+        $(".hamburger-line").css("background-color", "#FFFFFF");
+    }
+});
+
 /* function resize(){
     if(width > 768){
         $(".list2").css("opacity", "0");
