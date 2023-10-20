@@ -213,8 +213,16 @@ h4 {
         z-index: -1;
     }
 
+    .list2 .link:hover{
+        cursor:default;
+    }
+
     .hamburger {
         opacity: 0;
+    }
+
+    .hamburger:hover {
+        cursor:default;
     }
 
     .link {
