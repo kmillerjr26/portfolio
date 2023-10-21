@@ -33,6 +33,10 @@ a {
     justify-self: left;
 }
 
+.logo:hover {
+    color: #00e693;
+}
+
 .list {
     text-align: center;
     align-items: center;
