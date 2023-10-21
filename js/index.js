@@ -3,11 +3,11 @@ var images = [];
 var text = [];
 var time = 4000;
 
-images[0] = "images/slider1.avif";
-images[1] = "images/slider2.avif";
-images[2] = "images/slider3.avif";
-images[3] = "images/slider4.avif";
-images[4] = "images/slider5.avif";
+images[0] = "url('images/slider1.avif')";
+images[1] = "url('images/slider2.avif')";
+images[2] = "url('images/slider3.avif')";
+images[3] = "url('images/slider4.avif')";
+images[4] = "url('images/slider5.avif')";
 
 text[0] = "Om Mobile App";
 text[1] = "DOI Site Redesign";
@@ -17,7 +17,7 @@ text[4] = "Polyphony Mobile App";
 
 function changeImg(){
     document.getElementById("card-text").innerHTML = "";
-    document.getElementById("slide-img").src = images[i];
+    $(".card-image").css("background-image", images[i]);
     document.getElementById("card-text").append(text[i]);
 
     if (i < images.length-1){
@@ -32,7 +32,7 @@ function changeImg(){
 changeImg();
 $(".arrow-right").click(function(){
     document.getElementById("card-text").innerHTML = "";
-    document.getElementById("slide-img").src = images[i];
+    $(".card-image").css("background-image", images[i]);
     document.getElementById("card-text").append(text[i]);
 
     if (i < images.length-1){
