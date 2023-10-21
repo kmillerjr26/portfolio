@@ -197,7 +197,7 @@ h4 {
 
     .list {
         text-align: unset;
-        align-items: unset;
+        align-items: normal;
         opacity: 1;
     }
 
