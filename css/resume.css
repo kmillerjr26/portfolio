@@ -1,0 +1,23 @@
+.date {
+    color: #e60080;
+}
+
+.header-black {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.header-black-2{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+ul {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+}
