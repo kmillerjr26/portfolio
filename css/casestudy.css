@@ -22,6 +22,11 @@ ul li {
     font-family: "Helvetica", sans-serif; 
 }
 
+.highlight {
+    font-style: oblique; 
+    color: #2680ff;
+}
+
 .col-lg-3 {
     margin-left: 0;
     padding-left: 0;
