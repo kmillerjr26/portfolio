@@ -25,3 +25,13 @@
 .card {
     border: 0;
 }
+
+.about-linkedin {
+    font-family: "Roboto Mono", monospace;
+    color: #00e693;
+}
+
+.about-linkedin:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
