@@ -1,7 +1,8 @@
 var i = 0;
 var images = [];
 var text = [];
-var time = 4000;
+var time = 4000; 
+var timer;
 
 images[0] = "url('images/slider1.avif')";
 images[1] = "url('images/slider2.avif')";
@@ -15,6 +16,14 @@ text[2] = "EESI Site Redesign";
 text[3] = "Cafehunt Mobile App";
 text[4] = "Polyphony Mobile App";
 
+function timeStart(){
+    timer = setTimeout(changeImg, time);
+}
+
+function timeEnd(){
+    clearTimeout(timer);
+}
+
 function changeImg(){
     document.getElementById("card-text").innerHTML = "";
     $(".card-image").css("background-image", images[i]);
@@ -27,10 +36,12 @@ function changeImg(){
         i=0;
     }
 
-    setTimeout(changeImg, time); 
+    timeStart();
+    
 }
-changeImg();
+
 $(".arrow-right").click(function(){
+    timeEnd();
     document.getElementById("card-text").innerHTML = "";
     $(".card-image").css("background-image", images[i]);
     document.getElementById("card-text").append(text[i]);
@@ -41,17 +52,26 @@ $(".arrow-right").click(function(){
     else{
         i=0;
     }
+    
+    timeStart();
+     
 });
 
-/*$(".arrow-left").click(function(){
+$(".arrow-left").click(function(){
+    timeEnd();
     document.getElementById("card-text").innerHTML = "";
-    document.getElementById("slide-img").src = images[i];
+    $(".card-image").css("background-image", images[i]);
     document.getElementById("card-text").append(text[i]);
 
-    if (i >= 0){
+    if (i > 0){
         i--;
     }
     else{
-        i=4;
+        i=images.length-1;
     }
-}); */ 
+    
+    timeStart();
+     
+});
+
+changeImg();
