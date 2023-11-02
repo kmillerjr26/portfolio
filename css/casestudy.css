@@ -68,3 +68,14 @@ ul li {
     text-align: center;
     margin-bottom: 2%;
 }
+
+.case-study-link {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.9em;
+    color: #00e693;
+}
+
+.case-study-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
