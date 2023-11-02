@@ -1,9 +1,12 @@
 .introimage {
     width: 100%;
+    margin-top: 10px;
 }
 
 .title {
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    margin: 10px 0;
 }
 
 .case-study-header {
