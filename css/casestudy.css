@@ -1,0 +1,57 @@
+
+hr {
+    background-color: #000;
+    color: #000;
+    height: 1.5px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    h1 {
+        text-align: unset;
+    }
+}
+
+.introimage {
+    width: 100%;  
+}
+
+.title {
+    margin: 10px 0;
+}
+
+.case-study-header {
+    color: #e60080;
+}
+
+.case-study-header2 {
+    color: #e60080;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.highlight {
+    font-style: italic; 
+    color: #2680ff;
+}
+
+
+.case-study-caption {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.case-study-link {
+    color: #00e693;
+    text-decoration: none;
+}
+
+.case-study-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

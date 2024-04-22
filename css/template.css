@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+----------------General-------------------
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #0b0b0b;
+    color: white;
+    font-family: "Archivo", Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    /*margin-top: 10px;*/
+}
+@media screen and (max-width: 768px){
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h1 {   
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2680ff;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    
+}
+
+hr {
+    border: none;
+    background-color: white;
+    color: white;
+    height: 3px;
+}
+
+.button {
+    font-family: "Archivo", Helvetica, sans-serif;
+    font-weight: bold;
+    color: #00e693;
+    border: 1.5px solid #00e693; 
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    padding: 5px 25px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+.button:hover{
+    background-color: #00e693;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.text-padding-section{
+    padding: 30px 40px;
+}
+
+@media screen and (max-width: 768px){
+    h1 {
+        text-align: center;
+    }
+}
+
+/*
+----------------Navigation-------------------
+
+:root{--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+*/
+
+.navbar{
+    z-index: 1;
+    padding: 10px 50px;
+    background-color: transparent;
+}
+.navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+@media screen and (max-width: 768px){
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+.logo {
+    font-family: "Archivo", Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+.logo:hover {
+    color: #00e693;
+    cursor: pointer;
+}
+.nav-link {
+    color: white;
+    font-family: "Archivo", Helvetica, sans-serif;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #00e693;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+    font-family: "Archivo", Helvetica, sans-serif;
+}
+
+.dropdown-item:hover {
+    color: #00e693;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px){
+    .dropdown-menu {
+        background-color: transparent;
+    }
+}
+/*
+----------------About-------------------
+*/
+.about-text{
+    padding: 0 50px;
+}
+.about-image{
+    background-image: url("/img/bkgd.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hi{
+    font-size: 2em;
+    line-height: 50px;
+    padding-top: 5%;
+}
+/*
+@media screen and (max-width: 768px){
+    button {
+        text-align: center;
+    }
+}*/
+
+/*
+----------------Work-------------------
+*/
+
+.case-study{
+    padding: 30px 0;
+}
+
+.case-study-image {
+    max-width: 100%;
+}
+
+.case-study-text {
+    margin-top: 120px;
+}
+
+.case-study-header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.case-study-button {
+    font-family: "Archivo", Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1.5px solid #ffffff; 
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    padding: 5px 25px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+.case-study-button-1:hover{
+    background-color: #ffffff;
+    color: #f1aded;
+    transition: 0.3s ease-in-out;
+}
+.case-study-button-2:hover{
+    background-color: #ffffff;
+    color: #ca6456;
+    transition: 0.3s ease-in-out;
+}
+.case-study-button-3:hover{
+    background-color: #ffffff;
+    color: #1d768e;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .case-study-text {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+}
+
+/*
+----------------My UX Skills-------------------
+*/
+
+.ux-card {
+    background-color: transparent;
+    color: white;
+}
+
+h5 {
+    font-weight: bold;
+    color: #e60080;
+}
+@media screen and (max-width: 768px){
+    #my-ux-skills {
+        text-align: center;
+    }
+}
+
+/*
+----------------Resume-------------------
+*/
+
+.date {
+    color: #e60080;
+}
+
+.header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-2 {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px){
+    .align {
+        text-align: center;
+    }
+}
+
+/*
+----------------Contact-------------------
+*/
+
+.hyperlink {
+    color: #00e693;
+    text-decoration: none;
+}
+
+.hyperlink:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
