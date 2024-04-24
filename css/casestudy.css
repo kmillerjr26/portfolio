@@ -5,6 +5,9 @@ hr {
     height: 1.5px;
 }
 
+.navbar {
+    background-color: black;
+}
 
 
 @media screen and (max-width: 768px){
@@ -14,7 +17,8 @@ hr {
 }
 
 .introimage {
-    width: 100%;  
+    width: 100%;
+    margin-top: 50px;  
 }
 
 .title {
