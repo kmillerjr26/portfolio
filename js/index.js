@@ -4,6 +4,7 @@ window.addEventListener("scroll", function(){
     var scrollTop = document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop){
         $(".navbar").css("top", "-80px");
+        $(".dropdown-menu").css("opacity", "0");
     }
     else{
         $(".navbar").css("top", "0px");
@@ -13,5 +14,9 @@ window.addEventListener("scroll", function(){
     if(scrollTop == 0){
         $(".navbar").css("background-color", "transparent");
     }
+});
+
+$(".dropdown-toggle").click(function(){
+    $(".dropdown-menu").css("opacity", "1");
 });
 
